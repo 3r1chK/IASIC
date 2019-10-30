@@ -1,0 +1,5 @@
+localhost
+erich
+erich
+3306
+marine_classification
