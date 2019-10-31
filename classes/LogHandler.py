@@ -1,3 +1,30 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                               #
+#     Copyright 2019 Erich Kohmann                                              #
+#                                                                               #
+#     This file is part of IASIC.                                               #
+#                                                                               #
+#     IASIC is free software: you can redistribute it and/or modify             #
+#     it under the terms of the GNU General Public License as published by      #
+#     the Free Software Foundation, either version 3 of the License, or         #
+#     (at your option) any later version.                                       #
+#                                                                               #
+#     IASIC is distributed in the hope that it will be useful,                  #
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of            #
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             #
+#     GNU General Public License for more details.                              #
+#                                                                               #
+#     You should have received a copy of the GNU General Public License         #
+#     along with Foobar.  If not, see <https://www.gnu.org/licenses/>.          #
+#                                                                               #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Package:      IASIC
+# File:         classes/LogHandler.py
+# Author:       Erich Kohmann (erich.kohmann@gmail.com)
+# Description:  Used instead of `logging` to store and eventually print execution messages
+
+
 import datetime
 
 

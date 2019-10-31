@@ -1,4 +1,29 @@
-#!/usr/bin/python3
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                               #
+#     Copyright 2019 Erich Kohmann                                              #
+#                                                                               #
+#     This file is part of IASIC.                                               #
+#                                                                               #
+#     IASIC is free software: you can redistribute it and/or modify             #
+#     it under the terms of the GNU General Public License as published by      #
+#     the Free Software Foundation, either version 3 of the License, or         #
+#     (at your option) any later version.                                       #
+#                                                                               #
+#     IASIC is distributed in the hope that it will be useful,                  #
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of            #
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             #
+#     GNU General Public License for more details.                              #
+#                                                                               #
+#     You should have received a copy of the GNU General Public License         #
+#     along with Foobar.  If not, see <https://www.gnu.org/licenses/>.          #
+#                                                                               #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Package:      IASIC
+# File:         auto-sampler-py
+# Author:       Erich Kohmann (erich.kohmann@gmail.com)
+# Description:  This is the main script that manages the whole IASIC program
+
 
 import threading
 
@@ -25,9 +50,6 @@ MAX_SAMPLING_NUMBER = 1             # The (maximum) number of sampling to perfor
 #  - Implement monitor to avoid simultaneous Insta API uses: wait 2 seconds!?
 #  - Implement hashtag-locations handler (user-locations already implemented but to be tested!)
 #  - Implement auto-commit in the DbInterface
-
-# TODO (v1):
-#  - Add COPYRIGHT and README!!!!!!!!!!!!
 
 
 class AutoSampler:

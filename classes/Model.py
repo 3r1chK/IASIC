@@ -1,3 +1,32 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                               #
+#     Copyright 2019 Erich Kohmann                                              #
+#                                                                               #
+#     This file is part of IASIC.                                               #
+#                                                                               #
+#     IASIC is free software: you can redistribute it and/or modify             #
+#     it under the terms of the GNU General Public License as published by      #
+#     the Free Software Foundation, either version 3 of the License, or         #
+#     (at your option) any later version.                                       #
+#                                                                               #
+#     IASIC is distributed in the hope that it will be useful,                  #
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of            #
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             #
+#     GNU General Public License for more details.                              #
+#                                                                               #
+#     You should have received a copy of the GNU General Public License         #
+#     along with Foobar.  If not, see <https://www.gnu.org/licenses/>.          #
+#                                                                               #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Package:      IASIC
+# File:         classes/Model.py
+# Author:       Erich Kohmann (erich.kohmann@gmail.com)
+# Description:  This class handles all about the Keras-mobilenet model,
+#               loading it with `imagenet` weights and using such a model
+#               to predict instagram sampled images
+
+
 from tensorflow import keras
 from keras.preprocessing import image
 from keras.applications.mobilenet import preprocess_input, decode_predictions
@@ -13,8 +42,8 @@ class Model:
     model = None
     MAX_PREDICTIONS_TO_STORE = 0
 
-    def __init__(self, max_preditcions_to_store):
-        self.MAX_PREDICTIONS_TO_STORE = max_preditcions_to_store
+    def __init__(self, max_predictions_to_store):
+        self.MAX_PREDICTIONS_TO_STORE = max_predictions_to_store
         self.loadModel()
 
     def predict(self, img_path):
