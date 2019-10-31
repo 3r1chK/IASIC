@@ -34,7 +34,7 @@ from classes.Model import Model
 
 # Configurations
 LOG_LEVEL = 3                       # 0 - Errors; 1 - Warnings; 2 - Notices; 3 - Verbose
-IS_DEBUG = True
+IS_DEBUG = True                     # As the name suggest. Actually not useful
 DISABLE_EXISTENCE_CHECK = False     # If True it will avoid to check whether the image has been already processed or not
 THREAD_START_AWAITING_TIME = 2      # The time between threads executions (to avoid concurrent API requests)
 
@@ -47,7 +47,6 @@ MAX_SAMPLING_NUMBER = 1             # The (maximum) number of sampling to perfor
 # TODO(v1.1):
 #  - Implement a watcher to don't do too many "near" http requests
 #       [to prevent ConnectionResetError(104, 'Connection reset by peer'))]
-#  - Implement monitor to avoid simultaneous Insta API uses: wait 2 seconds!?
 #  - Implement hashtag-locations handler (user-locations already implemented but to be tested!)
 #  - Implement auto-commit in the DbInterface
 
