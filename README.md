@@ -45,7 +45,7 @@ Once choice, put each couple `search_key period` (_i.e. "search_key[SAPCE]period
 ```
 _(this would initializes 4 auto-samplers: one will sample every minute searching for "naples" _hashtag_, another will sample every 20 minutes searching for the user "zerounoquarantaquattro", and so on)_
 
-The only thing left to do is to open your console and to run `auto-sampler.py` with the Python3 interpreter, so to make the sampling start.
+The only thing left to do is to open your console and to run `auto-sampler.py` with the _Python3 interpreter_, so to make the sampling start.
 
 ---
 
